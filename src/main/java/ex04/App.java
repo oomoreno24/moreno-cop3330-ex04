@@ -30,4 +30,30 @@ Implement a branching story, where the answers to questions determine how the st
  */
 
 public class App {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter a noun: ");
+
+        // input for noun
+        String noun = in.nextLine();
+
+        System.out.print("Enter a verb: ");
+
+        // input for verb
+        String verb = in.nextLine();
+
+        System.out.print("Enter an adjective: ");
+
+        // input for adjective
+        String adjective = in.nextLine();
+
+        System.out.print("Enter an adverb: ");
+
+        // input for adverb
+        String adverb = in.nextLine();
+
+        // output using format
+        System.out.printf("Do you %s your %s %s %s? That's weird...%n", verb, adjective, noun, adverb);
+
+    }
 }
